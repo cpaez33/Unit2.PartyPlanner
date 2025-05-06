@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  display: grid;
+  gap: 1rem;
+}
+
+.main-sections {
+  padding: 0 1rem;
+}
+
+.partylist {
+  margin-top: 0.5rem;
+  list-style: none;
+  display: grid;
+  gap: 1ch;
+}
+
+.partylist a {
+  color: unset;
+  text-decoration: unset;
+
+  display: block;
+  width: 100%;
+  border: 1px solid #eee;
+  border-radius: 0.25rem;
+  padding: 1ch;
+}
+
+.partylist a:hover {
+  background: #eee;
+}
+
+.party {
+  display: grid;
+  gap: 1ch;
+}
+
+@media (width > 600px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
